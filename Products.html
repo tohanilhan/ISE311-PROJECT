@@ -8,7 +8,7 @@
 .header {
   background-color: #f1f1f1;
   padding: 20px;
-  text-align: left: ;;
+  text-align: left;
 }
 .card{
     max-width: 400px;
@@ -61,8 +61,49 @@ li a{
     padding: 15px 15px;
     text-decoration: none;
 }
-li a:hover{
+li a .red{
+  font-size: 16px;
+    display:block;
+    color:red;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+.dropbutton{
+  display: inline-block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .drowdown:hover .dropbutton{
     color:blue;
+}
+li.dropdown{
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color:blue;
+  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 .column {
   float: left;
@@ -87,13 +128,62 @@ li a:hover{
         <p>Resize the browser window to see the responsive effect.</p>
       </div>
     <ul>
-        <li><a href="">KADIN</a></li>
-        <li><a href="">ERKEK</a></li>
-        <li><a href="">ÇOCUK</a></li>
-        <li><a href="">BEBEK</a></li>
-        <li><a href="">LCW HOME</a></li>
-        <li><a href="">MARKALAR</a></li>
-        <li style="color:red"><a href="">OUTLET</a></li>
+        <li class="dropdown">
+          <a href="" class="dropbutton">KADIN</a>
+          <div class="dropdown-content">
+            <a href="">Link1</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropbutton">ERKEK</a>
+          <div class="dropdown-content">
+            <a href="">Link1</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropbutton">ÇOCUK</a>
+          <div class="dropdown-content">
+            <a href="">Link1</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropbutton">BEBEK</a>
+          <div class="dropdown-content">
+            <a href="">Link1</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropbutton">LCW HOME</a>
+          <div class="dropdown-content">
+            <a href="">Link1</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropbutton">MARKALAR</a>
+          <div class="dropdown-content">
+            <a href="">Link1</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropbutton" style="color: red;" >OUTLET</a>
+          <div class="dropdown-content">
+            <a href="">Link1</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>
+          </div>
+        </li>
         
     </ul> 
     <div class="card column">
