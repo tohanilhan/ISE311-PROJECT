@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ÜYE KAYIT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<!-- I only imported icons from this css style sheet-->
+<style>
+  
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 20px;
+  background: whitesmoke;
+  color: gray;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+
+/* Set a style for the submit button */
+.btn {
+  background-color: darkblue;
+  color: white;
+  font-size: 20px;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+a:visited {
+  color: rgb(24, 187, 252);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+</style>
+</head>
+
+<body style="margin-top: 200px;">
+
+<form action="/action_page.php" style="max-width:500px;margin:auto">
+  <h2 style="margin-bottom: 15px"> ÜYEKAYIT</h2>
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="E-Posta Adresiniz" name="name"/>
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Şifreniz" name="password">
+  </div>
+
+  <p style="font-size: 80%; opacity: 0.5;">Şifreniz en az 6, en çok 20 karakter olmalıdır</p>
+
+  <div class="input-container">
+    <i class="fa fa-mobile-phone icon"></i>
+    <input class="input-field" type="text" placeholder="+90(Cep Telefonu)" name="phone"/>
+  </div>
+
+  <div>
+    <input type="checkbox" name="checkbox1" value="false">Pazarlama ve verilen hizmetin iyileştirilmesi için tarafımla e-posta ile iletişime geçilmesini istiyorum.<br>
+  </div>
+<br>
+  
+  <div>
+    <input type="checkbox" name="checkbox2" value="false">Pazarlama ve verilen hizmetin iyileştirilmesi için tarafımla SMS ile ya da aranarak iletişime geçilmesini istiyorum.<br>
+  </div>
+<br>
+
+  <div>
+    <input type="checkbox" name="checkbox3" value="false"><u>Kullanım ve Gizlilik Sözleşmesini okudum</u>, onaylıyorum <u>Aydınlatma Metnini</u> okudum.<br>
+  </div>
+<br>
+<br>
+<br>
+
+  <input class="btn" type="submit" value="Üye Ol">
+</form>
+
+<p style="text-align: center; font-size: 15px; margin-top: 20px;">veya</p>
+<p style="text-align: center; font-size: 18px; margin-top: 10px;">Zaten üye misiniz? <a href="file:///D:/HTML/Untitled2.html">Giriş Yap</a></p>
+</body>
+</html>
+
