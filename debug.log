@@ -1,3 +1,5 @@
 [1227/202955.529:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
 [0101/172438.489:ERROR:settings.cc(325)] Settings version is not 1
 [0101/174528.329:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
+[0101/181920.186:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
+[0101/194721.928:ERROR:settings.cc(325)] Settings version is not 1
