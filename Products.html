@@ -4,26 +4,25 @@
 <meta charset="UTF-8">
 <meta charset="viewport" content="width=device-width, initial-scale=1.0">
 <title>LCW</title>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <style>
 .header {
-  background-color: #f1f1f1;
-  padding: 20px;
+  background-color: white;
+  border: none;
   text-align: left;
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.19);
 }
 .header_bottom{
   background-color: #f1f1f1;
-  padding: 8px;
-  margin: 8px;
   max-width: 100%;
+  text-align:justify;
   
 }
 .card{
     max-width: 400px;
     text-align: center;
     font-family:Helvetica;
-    float: left ;
-    
-    
+    float: left ;   
 }
 .card:hover{
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
@@ -59,20 +58,20 @@
 .list{
     float:left;
 }
-.list_a{
-    font-size: 28px;
+.list a{
+    font-size: 18px;
     display:block;
     color:black;
     text-align: center;
-    padding: 15px 15px;
+    padding: 8px 8px;
     text-decoration: none;
 }
-.list_a .red{
-  font-size: 28px;
+.list a .red{
+  font-size: 18px;
     display:block;
     color:red;
     text-align: center;
-    padding: 15px 15px;
+    padding: 8px 8px;
     text-decoration: none;
 }
 .dropbutton{
@@ -82,10 +81,10 @@
   padding: 14px 16px;
   text-decoration: none;
 }
-.list_a:hover .drowdown:hover .dropbutton{
+.list a:hover .drowdown:hover .dropbutton:hover{
     color:blue;
 }
-.list_a.dropdown{
+.list a.dropdown{
   display: inline-block;
 }
 .dropdown-content {
@@ -114,7 +113,7 @@
 }
 .column {
   
-  margin: 15px;
+  margin: 30px;
   float: left;
   width: 100%;
   
@@ -134,13 +133,34 @@
   clear: both;
   display: table;
 }
+.column_bottom {
+  float:left;
+  padding: 10px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
 </style>
+
 </head>
 <body>
-    <div class="header">
-        <img src="C:\Users\ataha\Documents\GitHub\ISE311-PROJECT\logo.png" width="360" height="76"></img>
+  
+    <div class="header" id="header">
+        <img src="logo.png" width="360" height="76"></img>
         <ul class="ullist">
-          <li class="dropdown list list_a">
+          <li class="dropdown list">
             <a href="" class="dropbutton">KADIN</a>
             <div class="dropdown-content">
               <a href="">Link1</a>
@@ -148,31 +168,31 @@
               <a href="">Link3</a>
             </div>
           </li>
-          <li class="dropdown list list_a">
-            <a href="" class="dropbutton">ERKEK</a>
+          <li class="dropdown list">
+            <a href="avascript:void(0)" class="dropbutton">ERKEK</a>
             <div class="dropdown-content">
               <a href="">Link1</a>
               <a href="">Link2</a>
               <a href="">Link3</a>
             </div>
           </li>
-          <li class="dropdown list list_a">
-            <a href="" class="dropbutton">ÇOCUK</a>
+          <li class="dropdown list">
+            <a href="avascript:void(0)" class="dropbutton">ÇOCUK</a>
             <div class="dropdown-content">
               <a href="">Link1</a>
               <a href="">Link2</a>
               <a href="">Link3</a>
             </div>
           </li>
-          <li class="dropdown list list_a">
-            <a href="" class="dropbutton">BEBEK</a>
+          <li class="dropdown list">
+            <a href="avascript:void(0)" class="dropbutton">BEBEK</a>
             <div class="dropdown-content">
               <a href="">Link1</a>
               <a href="">Link2</a>
               <a href="">Link3</a>
             </div>
           </li>
-          <li class="dropdown list list_a">
+          <li class="dropdown list">
             <a href="" class="dropbutton">LCW HOME</a>
             <div class="dropdown-content">
               <a href="">Link1</a>
@@ -180,7 +200,7 @@
               <a href="">Link3</a>
             </div>
           </li>
-          <li class="dropdown list list_a">
+          <li class="dropdown list">
             <a href="" class="dropbutton">MARKALAR</a>
             <div class="dropdown-content">
               <a href="">Link1</a>
@@ -188,7 +208,7 @@
               <a href="">Link3</a>
             </div>
           </li>
-          <li class="dropdown list list_a">
+          <li class="dropdown list">
             <a href="" class="dropbutton" style="color: red;" >OUTLET</a>
             <div class="dropdown-content">
               <a href="">Link1</a>
@@ -219,7 +239,6 @@
     <p class="price">139,99 TL</p>
     
 </div>
-
 <div class="card column">
   <img src="l_20202-0wgi40z8-lal_a.jpg" alt="Standart Kalıp Roller Şort - LC WAIKIKI" style="width:100% ;">
   <p>Standart Kalıp Roller Şort</p>
@@ -275,7 +294,6 @@
 </div>    
 </div>
 <div class="header_bottom" style="float: left;">
-<div class="header_bottom" style="display: inline-block;">
   <span>Uygulamayı indirin</span>
   <a href="https://apps.apple.com/tr/app/id806222359">
     <img src="app-store-png-logo.png" width="89.45" height="30" margin="15px"></img>
@@ -287,22 +305,34 @@
     <img src="app-gallery-png.png"  width="100" height="30"></img>
   </a>
 </div>
-<div class="header_bottom" style="float: right;">
-  <span style="display: inline-block;">Bizi Takip Edin</span>
+<div class="header_bottom">
+  <span>Bizi Takip Edin</span>
   <a href="https://www.facebook.com/lcwaikiki">
   <img src="facebook.png" width="30" height="35" ></img>
 </a>
+  <a href="https://www.linkedin.com/company/lc-waikiki/">
+  <img src="linkedin.png" width="30" height="35" ></img>
+</a>
+  <a href="http://instagram.com/lcwaikiki">
+  <img src="instagram.png" width="30" height="35" ></img>
+</a>
+  <a href="https://www.youtube.com/lcwaikiki">
+  <img src="youtube.png" width="30" height="35" ></img>
+</a>
 </div>
-</div>
-<div>
-  <ul style="width:10%; float:left;list-style-type: none; margin: 15px;">
+
+
+<div class="row">
+  <div class="column_bottom" >
+    <ul style="width:10%; float:left;list-style-type: none; margin: 15px;">
     <h3>Yardım</h3>
-    <li>SSS</li>
-    <li>İade</li>
+    <li>Sıkç Sorulan Sorular</li>
+    <li>İade ve Değişim</li>
     <li>Site Haritası</li>
     <li>Kullanım Koşulları</li>
   </ul>
-  
+  </div>
+    <div class="column_bottom" >
   <ul style="width:10%; float:left;list-style-type: none; margin: 15px;">
     <h3>Kurumsal</h3>
     <li>Hakkımızda</li>
@@ -311,12 +341,30 @@
     <li>Kariyer Fırsatları</li>
     <li>Kurumsal Destek</li>
   </ul>
+  </div>
   
+    <div class="column_bottom" >
   <ul style="width:10%; float:left;list-style-type: none; margin: 15px;">
     <h3>Politikalar</h3>
     <li>Aydınlatma Metni</li>
     <li>Veri Gizliliği Ve Güvenliği Sertifikası</li>
   </ul>
 </div>
+  </div>
+  <script>
+  window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky")
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </HTML>
