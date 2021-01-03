@@ -5,235 +5,20 @@
 <meta charset="viewport" content="width=device-width, initial-scale=1.0">
 <title>LCW</title>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<style>
-.header {
-  background-color: white;
-  border: none;
-  text-align: left;
-  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.19);
-}
-.header a:hover{
-  color:blue;
-}
-.header_bottom{
-  background-color: #f1f1f1;
-  max-width: 100%;
-  margin: 30px;
-  border: none;
-  
-}
-.card{
-    max-width: 400px;
-    text-align: center;
-    font-family:Helvetica;
-    float: left ;   
-}
-.card:hover{
-    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
-}
-
-.price{
-    color: #193db0;
-    font-size: 22px ;
-    font-weight: bold;
-}
-/*
-.card button{
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #193db0;
-    text-align: center;
-    cursor: pointer;
-    width:%100;
-    font-size: 22px;
-}*/
-.card button:hover{
-    opacity:1;
-}
-.ullist{
-    list-style-type: none;
-    border-style: hidden;
-    overflow: hidden;
-    text-align: left;
-    
-}
-.list{
-    float:left;
-}
-.list a{
-    font-size: 18px;
-    display:block;
-    color:black;
-    text-align: center;
-    padding: 8px 8px;
-    text-decoration: none;
-}
-.list a .red{
-  font-size: 18px;
-    display:block;
-    color:red;
-    text-align: center;
-    padding: 8px 8px;
-    text-decoration: none;
-}
-.dropbutton{
-  display: inline-block;
-  color:black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.list a:hover .drowdown:hover .dropbutton:hover{
-    color:blue;
-}
-.list a.dropdown{
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  font-size: 16px;
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-  color:blue;
-  }
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.column {
-  
-  margin: 30px;
-  float: left;
-  width: 100%;
-  
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-  }
-}
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.column_bottom {
-  float:left;
-  padding: 10px;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-.header input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: 1px solid black;
-  font-size: 17px;
-}
-@media screen and (max-width: 600px) {
-  .header a, .header input[type=text] {
-    float: center;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-}
-  
-  .header input[type=text] {
-    border: 1px solid black;  
-  }
-  .container{
-    
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: #f1f1f1;
-  }
-  .container-2{
-    max-width:fit-content;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-    
-  }
-  .row-bottom{
-    display:flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .footer{
-    font-size: 14px;
-    padding: 60px 0 20px;
-    
-  }
-  .footer-col-1{
-    min-width: 250px;
-    margin-bottom: 20px;
-    flex-basis: 30½;
-  }
-  .footer-col-1 img{
-   
-    margin-bottom: 10px;
-  }
-  .footer-col-2{
-    flex: 1;
-    text-align: center;
-  }
-  .footer-col-3{
-    flex-basis: 12;
-    text-align: right;
-  }
-  .mobile-apps-label {
-    font-size: 12px;
-    font-weight: 600;
-    margin-right: 35px;
-    
-}
-
-  
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
   
     <div class="header" id="header">
-        <img src="logo.png" width="360" height="76"></img>
+       
+      <img src="logo.png" width="360" height="76"></img>
+      <i class="fas fa-user-alt" style="float: center; width: 100%; color:blue; margin-left: 1800px;"></i>
+      <i class="far fa-heart" style="float:center; width: 100%;  color:blue;margin-left: 1800px; "></i>
+      <i class="fas fa-shopping-bag" style="float: center; width: 100%; color: blue;margin-left: 1800px; "></i>   
+         <form class="example">
+        <input type="text" placeholder="Ürün,kategori veya marka ara" >
+        <button type="submit"><i class="fa fa-search"> Ara</i></button>
+        </form>
         <ul class="ullist">
           <li class="dropdown list">
             <a href="" class="dropbutton">KADIN</a>
@@ -244,7 +29,7 @@
             </div>
           </li>
           <li class="dropdown list">
-            <a href="avascript:void(0)" class="dropbutton">ERKEK</a>
+            <a href="javascript:void(0)" class="dropbutton">ERKEK</a>
             <div class="dropdown-content">
               <a href="">Link1</a>
               <a href="">Link2</a>
@@ -252,7 +37,7 @@
             </div>
           </li>
           <li class="dropdown list">
-            <a href="avascript:void(0)" class="dropbutton">ÇOCUK</a>
+            <a href="javascript:void(0)" class="dropbutton">ÇOCUK</a>
             <div class="dropdown-content">
               <a href="">Link1</a>
               <a href="">Link2</a>
@@ -260,7 +45,7 @@
             </div>
           </li>
           <li class="dropdown list">
-            <a href="avascript:void(0)" class="dropbutton">BEBEK</a>
+            <a href="javascript:void(0)" class="dropbutton">BEBEK</a>
             <div class="dropdown-content">
               <a href="">Link1</a>
               <a href="">Link2</a>
@@ -290,20 +75,17 @@
               <a href="">Link2</a>
               <a href="">Link3</a>
             </div>
-          </li>
-        <input type="text" placeholder="Search..">  
-      </ul>
-      
-        
+          </li>  
+      </ul>   
       </div>
-    
+  <div class="row"></div>  
     <div class="card column">
       <img src="l_20202-0wdu44z8-j2y_a.jpg" alt="Slim Fit Kapüşonlu Şişme Yelek - LC WAIKIKI" style="width:100% ;">
       <p>Slim Fit Kapüşonlu Şişme Yelek</p>
       <p class="price">139,99 TL</p>
       
   </div>
-<div class="row">
+
   <div class="card column">
     <img src="l_20202-0wgi40z8-lal_a.jpg" alt="Standart Kalıp Roller Şort - LC WAIKIKI" style="width:100%";>
     <p>Standart Kalıp Roller Şort</p>
@@ -442,6 +224,13 @@
     <li>Aydınlatma Metni</li>
     <li>Veri Gizliliği Ve Güvenliği Sertifikası</li>
   </ul>
+</div>
+<div class="footer-col-4">
+  <h3>LC Waikiki Destek</h3>
+  <button style="margin-left: 100px; background-color: transparent;">İletişim Formu</button>
+  <button>444 4 529</button>
+  <br>
+  <button>Whatsapp Destek 444 4 529</button>
 </div>
   </div>
   </div>
