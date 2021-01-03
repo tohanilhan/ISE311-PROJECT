@@ -5,3 +5,5 @@
 [0101/194721.928:ERROR:settings.cc(325)] Settings version is not 1
 [0101/201749.183:ERROR:settings.cc(325)] Settings version is not 1
 [0103/013905.113:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
+[0103/163912.032:ERROR:settings.cc(325)] Settings version is not 1
+[0103/175247.805:ERROR:settings.cc(325)] Settings version is not 1
