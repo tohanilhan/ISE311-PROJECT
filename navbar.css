@@ -1,0 +1,143 @@
+#content
+{
+    overflow: auto; 
+    height: 100%;
+}
+.header {
+    background-color: white;
+    border: none;
+    text-align: left;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.19);
+    resize: both;
+    width: 100%;
+  }
+  .header a:hover{
+    color:blue;
+  }
+   .ullist{
+      list-style-type: none;
+      border-style: hidden;
+      overflow: hidden;
+      text-align: left;  
+  }
+  .row_navbar{
+    display: flex;
+  }
+  .column_navbar {
+    margin:1px
+    
+  }
+  .list{
+      float:left;
+  }
+  .list li{
+    float: left;
+  }
+  .list a{
+      font-size: 18px;
+      display:inline-block;
+      color:black;
+      text-align: center;
+      padding: 8px 8px;
+      text-decoration: none;
+  }
+  .list a .red{
+    font-size: 18px;
+      display:block;
+      color:red;
+      text-align: center;
+      padding: 8px 8px;
+      text-decoration: none;
+  }
+  .list_social{
+    float: right;
+    text-align: center;
+}
+.list_social i{
+  margin: 13px;
+  margin-left: 35px;
+  padding-right: 20px;
+}
+.list_siparis{
+  float: right;
+  margin-right:20px;
+  
+}
+  .dropbutton{
+    display: inline-block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .list a:hover .drowdown:hover .dropbutton:hover{
+      color:blue !important;
+  }
+  .list a.dropdown{
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 16px;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color:blue;
+    }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .content {
+    padding: 16px;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  form.arama input[type=text] {
+    float: left;
+    padding: 6px;
+    margin-top: 14px;
+    margin-right: 16px;
+    margin-left: 50px;
+    width: 980px;
+    height: 33px;
+    border: none;
+    font-size: 17px;
+    border: 1px solid #ccc;
+  }
+  form.arama button {
+    float: right;
+    height: 33px;
+    width: 70px;
+    margin-top:14px ;
+    margin-left: -16px;
+    border: none;
+    background:white;
+    color: rgb(168, 166, 166);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-left: none;
+    cursor: pointer;
+  }
+  form.arama::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

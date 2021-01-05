@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+<meta charset="UTF-8">
+<meta charset="viewport" content="width=device-width, initial-scale=1.0">
+<title>LCW</title>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+    <div class="header" id="header">
+       <div class="row">
+           <div class="column">
+      <img src="logo.png" width="360" height="76"></img>
+           </div>
+           <div class="column">
+         <form class="arama">
+        <input type="text" placeholder="Ürün,kategori veya marka ara" >
+        <button type="submit"><i class="fa fa-search"> Ara</i></button>
+        </form>
+    </div>
+    <div class="column">
+        <ul class="ullist">
+            <li class="list_social">
+                <i class="fas fa-shopping-bag" style=" width: 100%; color:blue;"><br>Sepet</i>
+            </li>
+            <li class="list_social">
+                <i class="far fa-heart" style=" width: 100%;  color:blue;"><br>Favoriler</i>
+              </li>
+            <li class="list_social">
+                <i class="fa fa-user-o" style="width: 100%; color: blue;" onclick="document.location='login.html'" ><br>Giriş Yap</i>   
+            </li>
+        </ul></div>
+    </div>
+        <ul class="ullist">
+          <li class="dropdown list">
+            <a href="" class="dropbutton">KADIN</a>
+            <div class="dropdown-content">
+              <a href="">Link1</a>
+              <a href="">Link2</a>
+              <a href="">Link3</a>
+            </div>
+          </li>
+          <li class="dropdown list">
+            <a href="javascript:void(0)" class="dropbutton">ERKEK</a>
+            <div class="dropdown-content">
+              <a href="">Link1</a>
+              <a href="">Link2</a>
+              <a href="">Link3</a>
+            </div>
+          </li>
+          <li class="dropdown list">
+            <a href="javascript:void(0)" class="dropbutton">ÇOCUK</a>
+            <div class="dropdown-content">
+              <a href="">Link1</a>
+              <a href="">Link2</a>
+              <a href="">Link3</a>
+            </div>
+          </li>
+          <li class="dropdown list">
+            <a href="javascript:void(0)" class="dropbutton">BEBEK</a>
+            <div class="dropdown-content">
+              <a href="">Link1</a>
+              <a href="">Link2</a>
+              <a href="">Link3</a>
+            </div>
+          </li>
+          <li class="dropdown list">
+            <a href="" class="dropbutton">LCW HOME</a>
+            <div class="dropdown-content">
+              <a href="">Link1</a>
+              <a href="">Link2</a>
+              <a href="">Link3</a>
+            </div>
+          </li>
+          <li class="dropdown list">
+            <a href="" class="dropbutton">MARKALAR</a>
+            <div class="dropdown-content">
+              <a href="">Link1</a>
+              <a href="">Link2</a>
+              <a href="">Link3</a>
+            </div>
+          </li>
+          <li class="dropdown list">
+            <a href="" class="dropbutton" style="color: red;" >OUTLET</a>
+            <div class="dropdown-content">
+              <a href="">Link1</a>
+              <a href="">Link2</a>
+              <a href="">Link3</a>
+            </div>
+          </li>  
+      <li class="list_siparis">
+          <i class="fas fa-shuttle-van" style=" width: 100%;  color:blue;"> Sipariş Takip</i>
+        </li>
+    </ul> 
+    </div>
+
+
+  <script>
+  window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky")
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</HTML>
